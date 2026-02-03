@@ -8,9 +8,17 @@
 
 ## manejo de git
 ``git init``
+
+
 ``git add .``
+
 ``git commit -m "v1"``
+
+
 ``git branch -M master``
+
+``git remote add origin https://github.com/fernandogh7508/node_3278524.gitcls``
+ 
 
 # 📁Estructura profesionales de una API en Node.js
 api-node
