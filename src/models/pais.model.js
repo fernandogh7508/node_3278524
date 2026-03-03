@@ -1,7 +1,6 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../config/database');
-//const { move } = require('../app');
-const Usuario = sequelize.define('Usuario',{
+const Pais = sequelize.define('Pais',{
     id:{
         type: DataTypes.INTEGER,
         autoIncrement: true,
@@ -9,17 +8,13 @@ const Usuario = sequelize.define('Usuario',{
     },
     nombre:{
         type: DataTypes.STRING,
-        allowNull:false
-    },
-    correo:{
-        type: DataTypes.STRING,
-        allowNull: false,
+        allowNull:false,
         unique:true
-    }
+    }   
 
 },{
-    tableName:'usuarios',
+    tableName:'paises',
     timestamps:true
 });
 
-module.exports =Usuario;
+module.exports =Pais;
